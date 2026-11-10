@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Հայկական պետականության անկումը</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@300;400;500;700&family=Noto+Serif+Armenian:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo">Հայոց պատմություն</a>
+    <button class="nav__burger" id="burger" aria-label="Մենյու"><span></span><span></span><span></span></button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#intro">Ներածություն</a>
+      <a href="#concepts">Հասկացություններ</a>
+      <a href="#causes">Պատճառներ</a>
+      <a href="#example">Օրինակ</a>
+      <a href="#strategies">Ռազմավարություններ</a>
+      <a href="#limits">Սահմանափակումներ</a>
+      <a href="#conclusion">Եզրակացություն</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="dust"></canvas>
+    <div class="hero__ruin" aria-hidden="true">
+      <svg viewBox="0 0 600 300" preserveAspectRatio="xMidYMax meet">
+        <path d="M60 300 V190 L90 170 V140 L120 120 L150 140 V170 L190 150 V110 L260 70 L330 110 V150 L370 170 V140 L400 120 L430 140 V180 L470 200 V300 Z"/>
+        <path class="arch" d="M235 300 V200 a25 25 0 0 1 50 0 V300 Z"/>
+        <rect class="arch" x="165" y="190" width="14" height="30" rx="7"/>
+        <rect class="arch" x="390" y="190" width="14" height="30" rx="7"/>
+        <rect class="arch" x="252" y="120" width="16" height="34" rx="8"/>
+        <path d="M480 300 V230 a40 40 0 0 1 80 0 V300 Z"/>
+      </svg>
+    </div>
+    <div class="hero__content">
+      <p class="eyebrow reveal">Պետականության շարունակականությունն ու ընդհատումները հայոց պատմության մեջ</p>
+      <h1 class="hero__title">
+        <span class="split">Հայկական պետականության</span>
+        <span class="split">անկումը</span>
+      </h1>
+      <p class="hero__sub reveal" style="--d:.9s">և օտար տիրապետության պայմաններում գոյատևման ռազմավարությունները</p>
+      <a href="#intro" class="pill reveal" style="--d:1.1s">Պատմական վերլուծություն</a>
+    </div>
+    <a href="#intro" class="scroll-hint" aria-label="Ներքև"><span></span></a>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section light" id="intro">
+    <div class="container grid-2">
+      <div>
+        <p class="eyebrow reveal">Ներածություն</p>
+        <h2 class="reveal">Անկումը՝ որպես բազմաշերտ գործընթաց</h2>
+        <p class="reveal">Պետական անկախության կորուստը ոչ միշտ է նշանակել հայ հասարակության քաղաքական, մշակութային և ազգային կյանքի ամբողջական կազմալուծում։</p>
+        <p class="label reveal">Անկման վրա ազդել են՝</p>
+        <div class="chips">
+          <span class="chip reveal">Տերությունների մրցակցություն</span>
+          <span class="chip reveal">Ներքին իշխանական հակասություններ</span>
+          <span class="chip reveal">Սահմանափակ ռեսուրսներ</span>
+          <span class="chip reveal">Ռազմական անհավասարություն</span>
+          <span class="chip reveal">Միջազգային միջավայրի փոփոխություններ</span>
+        </div>
+        <p class="note reveal">Պետականության անկումը պետք է դիտարկել ոչ միայն որպես ռազմական պարտության կամ հարստության վերացման հետևանք, այլ որպես բազմաշերտ պատմական գործընթաց։</p>
+      </div>
+      <div class="ornament reveal" aria-hidden="true">
+        <svg viewBox="0 0 200 260" class="vine">
+          <path class="arch-frame" d="M10 250 V100 a90 90 0 0 1 180 0 V250 Z"/>
+          <path class="stem" d="M100 245 V40"/>
+          <g class="leaves">
+            <path d="M100 210 C70 200 60 180 55 165 C80 170 95 185 100 210"/>
+            <path d="M100 210 C130 200 140 180 145 165 C120 170 105 185 100 210"/>
+            <path d="M100 160 C72 150 62 130 58 115 C82 120 96 135 100 160"/>
+            <path d="M100 160 C128 150 138 130 142 115 C118 120 104 135 100 160"/>
+            <path d="M100 110 C78 102 70 86 68 72 C86 78 97 90 100 110"/>
+            <path d="M100 110 C122 102 130 86 132 72 C114 78 103 90 100 110"/>
+          </g>
+          <g class="grapes">
+            <circle cx="50" cy="190" r="6"/><circle cx="40" cy="198" r="6"/><circle cx="52" cy="202" r="6"/><circle cx="45" cy="210" r="6"/>
+            <circle cx="150" cy="190" r="6"/><circle cx="160" cy="198" r="6"/><circle cx="148" cy="202" r="6"/><circle cx="155" cy="210" r="6"/>
+            <circle cx="55" cy="135" r="5"/><circle cx="46" cy="142" r="5"/><circle cx="56" cy="146" r="5"/>
+            <circle cx="145" cy="135" r="5"/><circle cx="154" cy="142" r="5"/><circle cx="144" cy="146" r="5"/>
+            <circle cx="100" cy="38" r="7"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCEPTS -->
+  <section class="section dark" id="concepts">
+    <div class="container">
+      <p class="eyebrow reveal">Հիմնական հասկացություններ</p>
+      <h2 class="reveal">Երեք հասկացություն</h2>
+      <p class="hint reveal">Սեղմեք քարտի վրա՝ այն շրջելու համար</p>
+      <div class="cards-3">
+        <div class="flip reveal" tabindex="0">
+          <div class="flip__inner">
+            <div class="flip__front"><span class="num">01</span><h3>Պետություն</h3><span class="flip__icon">↻</span></div>
+            <div class="flip__back"><h3>Պետություն</h3><p>Քաղաքական կազմակերպություն՝ տարածքով, իշխանության մարմիններով և բնակչությամբ։</p></div>
+          </div>
+        </div>
+        <div class="flip reveal" tabindex="0" style="--d:.15s">
+          <div class="flip__inner">
+            <div class="flip__front"><span class="num">02</span><h3>Պետականություն</h3><span class="flip__icon">↻</span></div>
+            <div class="flip__back"><h3>Պետականություն</h3><p>Ավելի լայն հասկացություն է։ Ներառում է կառավարման ավանդույթները, քաղաքական ինքնուրույնության գաղափարը, իրավական պատկերացումները և պետական ինստիտուտները վերականգնելու հնարավորությունը։</p></div>
+          </div>
+        </div>
+        <div class="flip reveal" tabindex="0" style="--d:.3s">
+          <div class="flip__inner">
+            <div class="flip__front"><span class="num">03</span><h3>Ազգային ինքնություն</h3><span class="flip__icon">↻</span></div>
+            <div class="flip__back"><h3>Ազգային ինքնություն</h3><p>Պատմական, լեզվական և մշակութային կապեր, որոնցով ժողովուրդը գիտակցում է իր շարունակականությունը։</p></div>
+          </div>
+        </div>
+      </div>
+      <p class="quote reveal">Երեքը փոխկապակցված են, բայց նույնական չեն։ Պետությունը կորցնելուց հետո կարող են պահպանվել պետականության գաղափարն ու ինքնությունը։</p>
+      <div class="needs reveal">
+        <p class="needs__title">Սակայն պետությունը վերականգնելու համար անհրաժեշտ են նաև՝</p>
+        <div class="needs__grid">
+          <div class="need"><span>01</span>Քաղաքական հնարավորություններ</div>
+          <div class="need"><span>02</span>Կազմակերպված ուժեր</div>
+          <div class="need"><span>03</span>Տնտեսական միջոցներ</div>
+          <div class="need"><span>04</span>Բարենպաստ արտաքին պայմաններ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAUSES -->
+  <section class="section light" id="causes">
+    <div class="container">
+      <p class="eyebrow reveal">Անկման պատճառները</p>
+      <h2 class="reveal">Մեկ գործոնով չի բացատրվում</h2>
+      <p class="reveal lead">Բոլոր անկումները չի կարելի բացատրել մեկ գործոնով կամ համարել «ճակատագիր»։ Անկման պատճառները տարբեր ժամանակաշրջաններում նույնը չեն եղել։</p>
+
+      <div class="tabs reveal">
+        <div class="tabs__list" role="tablist">
+          <button class="tab active" data-tab="0"><span>01</span>Արտաքին ճնշում</button>
+          <button class="tab" data-tab="1"><span>02</span>Ներքին մասնատվածություն</button>
+          <button class="tab" data-tab="2"><span>03</span>Ռազմական և տնտեսական անհավասարություն</button>
+          <button class="tab" data-tab="3"><span>04</span>Աշխարհաքաղաքական փոփոխություն</button>
+        </div>
+
+        <!-- Cause 1 -->
+        <div class="panel active" data-panel="0">
+          <h3>Արտաքին ճնշում և տերությունների մրցակցություն</h3>
+          <p>Հայաստանի շուրջ մրցակցել են մեծ տերությունները։ Նրանց մրցակցությունը հնարավորություն էր տալիս մանևրելու, բայց երկիրը դառնում էր պատերազմների թատերաբեմ։</p>
+          <div class="timeline">
+            <div class="tl"><span class="tl__dot">I</span><small>Հին շրջան</small><p>Հռոմ և Պարթևստան</p></div>
+            <div class="tl"><span class="tl__dot">II</span><small>Հետագայում</small><p>Բյուզանդիա և Սասանյան Պարսկաստան</p></div>
+            <div class="tl"><span class="tl__dot">III</span><small>Միջնադար</small><p>Արաբական խալիֆայություն, Բյուզանդիա, սելջուկներ, մոնղոլներ</p></div>
+            <div class="tl"><span class="tl__dot">IV</span><small>Ուշ շրջան</small><p>Օսմանյան կայսրություն և Սեֆյան Պարսկաստան</p></div>
+          </div>
+          <div class="cards-3 small">
+            <div class="box"><h4>Հնարավորություն</h4><p>Տերությունների հակասությունները թույլ էին տալիս վարել հավասարակշռման քաղաքականություն։</p></div>
+            <div class="box"><h4>Վտանգ</h4><p>Հայաստանը դառնում էր պատերազմների, արշավանքների և քաղաքական ճնշումների թատերաբեմ։</p></div>
+            <div class="box box--dark"><h4>Եզրակացություն</h4><p>Ճնշումը ոչ միայն ներխուժում է, այլև ինքնուրույն որոշումների հնարավորության աստիճանական սահմանափակում։</p></div>
+          </div>
+          <p class="note">Երբ տերություններից մեկը գերակշռում էր, հայկական իշխանությունների մանևրելու հնարավորությունը կտրուկ նվազում էր։</p>
+        </div>
+
+        <!-- Cause 2 -->
+        <div class="panel" data-panel="1">
+          <h3>Ներքին քաղաքական մասնատվածություն</h3>
+          <p>Թագավորական իշխանությունը պետք է հարաբերություններ կառուցեր նախարարական տների, հողատերերի, զինվորական առաջնորդների և հոգևոր կենտրոնների հետ։</p>
+          <p>Նախարարական տների շահերը բախվում էին կենտրոնական իշխանության նպատակներին, և որոշ իշխաններ հենվում էին օտար ուժերի վրա։</p>
+          <div class="compare">
+            <div class="box"><h4>Կարճաժամկետ</h4><p>Արտաքին ուժերի վրա հենվելը պահպանում էր տոհմի կալվածքներն ու արտոնությունները։</p></div>
+            <div class="compare__arrow">→</div>
+            <div class="box box--dark"><h4>Երկարաժամկետ</h4><p>Նույն քաղաքականությունը խորացնում էր երկրի մասնատվածությունը։</p></div>
+          </div>
+          <p class="note">Սակայն սա անկման միակ պատճառը չէր, քանի որ ներքին և արտաքին գործոններն ուժեղացնում էին միմյանց․ ներքին մասնատվածությունը հաճախ ուժեղանում էր արտաքին ճնշումից, իսկ միջամտությունը խորացնում էր եղած հակասությունները։</p>
+        </div>
+
+        <!-- Cause 3 -->
+        <div class="panel" data-panel="2">
+          <h3>Ռազմական և տնտեսական անհավասարություն</h3>
+          <div class="grid-2 center">
+            <div>
+              <p>Պետությանը պետք են միջոցներ՝ բանակի, ամրոցների, հարկահավաքության և սահմանների պաշտպանության համար։</p>
+              <p>Հայկական պետությունները մրցակցում էին բնակչությամբ, ռեսուրսներով և ռազմական ներուժով իրենց գերազանցող տերությունների հետ։</p>
+              <p class="note">Ստեղծվում էր արատավոր շրջան․ պարտությունը թուլացնում էր տնտեսությունը, իսկ թույլ տնտեսությունը՝ պաշտպանունակությունը։</p>
+            </div>
+            <div class="cycle" id="cycle">
+              <svg viewBox="0 0 300 300" class="cycle__ring"><circle cx="150" cy="150" r="110"/></svg>
+              <div class="cycle__core">Արատավոր<br>շրջան</div>
+              <div class="cycle__node n0">Ռազմական պարտություն</div>
+              <div class="cycle__node n1">Վնասվում են գյուղատնտեսությունը, առևտուրը, քաղաքները</div>
+              <div class="cycle__node n2">Տեղահանություն, հարկային եկամուտների նվազում</div>
+              <div class="cycle__node n3">Պաշտպանունակությունը թուլանում է</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cause 4 -->
+        <div class="panel" data-panel="3">
+          <h3>Աշխարհաքաղաքական միջավայրի փոփոխություն</h3>
+          <p>Առևտրային ուղիները տեղափոխվում էին, ի հայտ էին գալիս նոր ուժեր, ընդլայնվում էին կայսրությունները։ Այս գործոնները փոխում էին Հայաստանի ռազմավարական նշանակությունը։</p>
+          <div class="chips">
+            <span class="chip">Առևտրային ուղիների տեղափոխություն</span>
+            <span class="chip">Նոր ռազմական ուժեր</span>
+            <span class="chip">Հարևանների կենտրոնացում</span>
+            <span class="chip">Կայսրությունների ընդլայնում</span>
+          </div>
+          <p class="quote dark-text">Պետք է հարցնել ոչ միայն՝ ով հաղթեց կամ պարտվեց, այլև՝ ինչ պայմաններ էին ստեղծվել, որոնք մի ուժերին առավելություն տվեցին մյուսների նկատմամբ։</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXAMPLE -->
+  <section class="section light alt" id="example">
+    <div class="container">
+      <p class="eyebrow reveal">Պատմական օրինակ</p>
+      <h2 class="reveal">Արշակունյաց թագավորության անկումը</h2>
+      <div class="example">
+        <div class="years">
+          <div class="year reveal">
+            <span class="counter" data-target="387">0</span>
+            <p>Մեծ Հայքը բաժանվեց Հռոմի և Սասանյան Պարսկաստանի միջև։</p>
+          </div>
+          <div class="year reveal" style="--d:.2s">
+            <span class="counter" data-target="428">0</span>
+            <p>Թագավորությունը վերացավ․ Արևելյան Հայաստանում հաստատվեց պարսկական մարզպանություն, իսկ Արևմտյանը մնաց Բյուզանդիայի գերիշխանության տակ։</p>
+          </div>
+        </div>
+        <div class="box box--dark kept reveal" style="--d:.3s">
+          <h4>Ի՞նչ պահպանվեց</h4>
+          <ul class="stagger">
+            <li>Նախարարական տները</li>
+            <li>Նրանց ժառանգական կալվածքները</li>
+            <li>Զորքերը</li>
+            <li>Տեղական կառավարումը</li>
+            <li>Եկեղեցին, որի դերը մեծացավ</li>
+          </ul>
+          <p class="gold">Ա. Մելքոնյանի կարծիքով՝ պետականության որոշ դրսևորումներ շարունակվեցին մարզպանական և նախարարական համակարգերի միջոցով։</p>
+        </div>
+      </div>
+      <div class="compare reveal">
+        <div class="box good"><h4>Առաջին ռազմավարությունը</h4><p>Ներքին կառույցները նոր պայմաններին հարմարեցնելը։</p></div>
+        <div class="compare__arrow">→</div>
+        <div class="box bad"><h4>Սահմանափակումը</h4><p>Միասնական արտաքին քաղաքականություն այլևս չկար․ նախարարական տները չունեին թագավորական իշխանության հնարավորությունները։</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHURCH -->
+  <section class="section dark" id="church">
+    <div class="container grid-2 center">
+      <div class="church-art reveal" aria-hidden="true">
+        <svg viewBox="0 0 200 260">
+          <path class="arch-frame" d="M10 250 V100 a90 90 0 0 1 180 0 V250 Z"/>
+          <g class="church">
+            <path d="M99 18 h2 v14 h6 v2 h-6 v8 h-2 v-8 h-6 v-2 h6z"/>
+            <path d="M100 44 L128 70 H72 Z"/>
+            <rect x="78" y="70" width="44" height="34"/>
+            <path d="M60 104 L100 86 L140 104 Z"/>
+            <rect x="52" y="104" width="96" height="120"/>
+            <path class="cut" d="M90 224 V190 a10 10 0 0 1 20 0 V224 Z"/>
+            <rect class="cut" x="96" y="124" width="8" height="22" rx="4"/>
+            <rect class="cut" x="68" y="140" width="6" height="18" rx="3"/>
+            <rect class="cut" x="126" y="140" width="6" height="18" rx="3"/>
+            <rect class="cut" x="94" y="78" width="4" height="14" rx="2"/>
+            <rect class="cut" x="102" y="78" width="4" height="14" rx="2"/>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <p class="eyebrow reveal">Գոյատևման հենարան</p>
+        <h2 class="reveal">Հայ եկեղեցու դերը</h2>
+        <p class="reveal">Թագավորության անկումից հետո եկեղեցին կազմակերպում էր ոչ միայն կրոնական կյանքը, այլև կրթությունը, մշակույթը և համայնքային կապերը։</p>
+        <ol class="steps">
+          <li class="reveal"><span>1</span>Ուներ լայն ցանց՝ թեմեր, վանքեր և համայնքներ</li>
+          <li class="reveal" style="--d:.1s"><span>2</span>Պահպանում էր գրավոր մշակույթն ու կրթությունը</li>
+          <li class="reveal" style="--d:.2s"><span>3</span>Կապ էր ապահովում տարբեր տերությունների ներքո ապրող հայերի միջև</li>
+        </ol>
+        <div class="box box--muted reveal"><strong>Սահմանը․</strong> եկեղեցին պետությանը չէր փոխարինում, քանի որ չուներ բանակ, հարկային համակարգ և անկախ արտաքին քաղաքականություն։</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGIES -->
+  <section class="section bronze" id="strategies">
+    <div class="container">
+      <p class="eyebrow reveal">Գոյատևման ռազմավարություններ</p>
+      <h2 class="reveal">Հարմարվել՝ չհրաժարվելով անկախության գաղափարից</h2>
+      <div class="cards-4">
+        <button class="strat reveal" data-open="s1">
+          <span class="strat__icon">⌂</span><h3>Տեղական ինքնակառավարում</h3><p>Նախարարական տներ և համայնքային կառույցներ</p><em>Ավելին →</em>
+        </button>
+        <button class="strat reveal" style="--d:.1s" data-open="s0">
+          <span class="strat__icon">✎</span><h3>Եկեղեցի և մշակույթ</h3><p>Կրթություն, գրավոր ավանդույթ, համայնքային կապեր</p><em>Ավելին →</em>
+        </button>
+        <button class="strat reveal" style="--d:.2s" data-open="s2">
+          <span class="strat__icon">⚖</span><h3>Դիվանագիտություն</h3><p>Պայմանագրեր, դաշինքներ, քաղաքական ճանաչում</p><em>Ավելին →</em>
+        </button>
+        <button class="strat reveal" style="--d:.3s" data-open="s3">
+          <span class="strat__icon">◍</span><h3>Սփյուռք</h3><p>Համայնքներ Հայաստանի սահմաններից դուրս</p><em>Ավելին →</em>
+        </button>
+      </div>
+      <p class="reveal center-text">Այս ռազմավարությունները հաճախ գործել են միաժամանակ։</p>
+    </div>
+  </section>
+
+  <!-- LIMITS -->
+  <section class="section light" id="limits">
+    <div class="container">
+      <p class="eyebrow reveal">Սահմանափակումներ</p>
+      <h2 class="reveal">Ինչու ռազմավարությունները բավարար չէին</h2>
+      <div class="accordion">
+        <div class="acc reveal">
+          <button class="acc__head"><span>01</span>Կախվածություն օտար իշխանության կամքից<i></i></button>
+          <div class="acc__body"><p>Ինքնակառավարումը և եկեղեցական հաստատությունները գործում էին, քանի դեռ իշխող վարչակարգը թույլ էր տալիս։</p></div>
+        </div>
+        <div class="acc reveal">
+          <button class="acc__head"><span>02</span>Միասնական քաղաքական կենտրոնի բացակայություն<i></i></button>
+          <div class="acc__body"><p>Համայնքները պահպանում էին մշակութային կապերը, բայց չունեին միասնական ռազմական և դիվանագիտական համակարգ։</p></div>
+        </div>
+        <div class="acc reveal">
+          <button class="acc__head"><span>03</span>Տնտեսական ռեսուրսների պակաս<i></i></button>
+          <div class="acc__body"><p>Առևտրական կապերն ու կրթական հաստատությունները չէին ապահովում ռազմական ինքնուրույնություն։</p></div>
+        </div>
+        <div class="acc reveal">
+          <button class="acc__head"><span>04</span>Պայմանների փոփոխականություն<i></i></button>
+          <div class="acc__body"><p>Մի ժամանակ արդյունավետ ռազմավարությունը մեկ այլ ժամանակ կարող էր ձախողվել։ Հավասարակշռումը հաջողում էր, երբ ուժերը սահմանափակում էին միմյանց, և ձախողվում, երբ մեկը գերակշռում էր։</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCLUSION -->
+  <section class="conclusion" id="conclusion">
+    <div class="mountain" aria-hidden="true">
+      <svg viewBox="0 0 1200 400" preserveAspectRatio="none">
+        <path class="m-back" d="M0 400 L250 260 L420 300 L600 140 L700 200 L820 120 L1000 260 L1200 220 V400 Z"/>
+        <path class="m-front" d="M0 400 L180 330 L380 360 L560 300 L760 350 L980 310 L1200 360 V400 Z"/>
+        <path class="snow" d="M600 140 L640 175 L620 172 L605 185 L585 170 L565 178 Z M820 120 L850 145 L835 143 L820 152 L808 142 L795 145 Z"/>
+      </svg>
+    </div>
+    <div class="container">
+      <p class="eyebrow reveal">Եզրակացություն</p>
+      <h2 class="reveal">Շարունակականություն՝ առանց պետության</h2>
+      <div class="grid-2">
+        <p class="reveal">Ինքնությունն ու պետականության գաղափարը կարող են պահպանվել առանց պետության, բայց վերականգնման համար պետք են քաղաքական հնարավորություններ, կազմակերպված ուժեր, տնտեսական միջոցներ և բարենպաստ արտաքին պայմաններ։</p>
+        <p class="reveal" style="--d:.15s">Հայոց պատմության փորձը չի կարելի ներկայացնել որպես անընդհատ հաջող գոյատևում․ այն ներառում է նաև ծանր պարտություններ, հարկադիր տեղաշարժեր, մշակութային կորուստներ և չիրականացված ծրագրեր։</p>
+      </div>
+      <p class="summary reveal">Պետականության անկումը ներքին և արտաքին գործոնների փոխազդեցության արդյունք է, իսկ գոյատևման ռազմավարություններն ունեցել են և՛ արդյունքներ, և՛ սահմանափակումներ։</p>
+    </div>
+  </section>
+
+  <!-- SOURCES -->
+  <section class="section light" id="sources">
+    <div class="container">
+      <p class="eyebrow reveal">Աղբյուրներ</p>
+      <h2 class="reveal">Օգտագործված գրականություն</h2>
+      <ol class="sources">
+        <li class="reveal">Ա. Ա. Մելքոնյան, «Հայոց պետականության հին և միջնադարյան պատմափուլերը», Հայոց պատմության հարցեր, 2022, թիվ 1 (24), էջ 33–47։</li>
+        <li class="reveal">Մ. Գ. Գրիգորյան, «Բագրատունիները և հայոց թագավորության վերականգնումը», ՀՀ ԳԱԱ պատմության ինստիտուտ, 2013։</li>
+        <li class="reveal">Բ. Ն. Առաքելյան, «Հայկական պետականության վերականգնումը IX դարի վերջերին», 1971, էջ 27–40։</li>
+        <li class="reveal">Areg Vardanyan, “The Reasons for the Emergence of Armenian Statehood in Cilicia”, History and Culture, 2025։</li>
+        <li class="reveal">Richard G. Hovannisian (խմբ.), The Armenian People from Ancient to Modern Times, Vol. I: The Dynastic Periods, St. Martin’s Press, 1997։</li>
+        <li class="reveal">Jonathan Shepard (խմբ.), The Cambridge History of the Byzantine Empire c.500–1492, Cambridge University Press, 2008։</li>
+        <li class="reveal">The Cambridge History of Christianity, “Church and Diaspora: The Case of the Armenians”, Cambridge University Press։</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Հայոց պատմություն · Պատմական վերլուծություն</p>
+    <a href="#hero" class="to-top" aria-label="Վերև">↑</a>
+  </footer>
+
+  <!-- MODAL for strategies -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__card" role="dialog" aria-modal="true">
+      <button class="modal__close" data-close aria-label="Փակել">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <template id="s0">
+    <p class="eyebrow">Եկեղեցի և մշակույթ</p>
+    <h3>Հայ եկեղեցու դերը</h3>
+    <p>Եկեղեցին պահպանում էր հասարակության կազմակերպվածության ձևեր և մշակութային շարունակականություն՝ եպիսկոպոսական աթոռների, վանքերի և համայնքների ցանցի միջոցով։</p>
+    <div class="box box--muted"><strong>Սահմանը․</strong> եկեղեցին ամբողջությամբ չէր փոխարինում պետական իշխանությանը․ այն չէր կարող կազմակերպել բանակ կամ անկախ արտաքին քաղաքականություն։</div>
+  </template>
+  <template id="s1">
+    <p class="eyebrow">Ռազմավարություն 01</p>
+    <h3>Տեղական ինքնակառավարում</h3>
+    <p>Գերագույն իշխանությունը պատկանում էր օտար տիրակալին, բայց նախարարական տները կառավարում էին կալվածքները, կազմակերպում տեղական պաշտպանությունը և միջնորդում վարչակազմի ու բնակչության միջև։</p>
+    <div class="compare">
+      <div class="box good"><h4>Ուժեղ կողմ</h4><ul><li>Հասարակական հարաբերությունների շարունակականություն</li><li>Համայնքի գոյատևում, երբ օտար իշխանությունը թույլ էր տալիս</li></ul></div>
+      <div class="box bad"><h4>Թույլ կողմ</h4><ul><li>Խորացնում էր քաղաքական մասնատվածությունը</li><li>Խոչընդոտում էր համազգային կենտրոնի ձևավորմանը</li></ul></div>
+    </div>
+    <p class="note">Ապահովում էր շարունակականություն, բայց խորացնում էր մասնատվածությունը։ Այն պետք է գնահատել ըստ կոնկրետ պայմանների։</p>
+  </template>
+  <template id="s2">
+    <p class="eyebrow">Ռազմավարություն 02</p>
+    <h3>Դիվանագիտություն</h3>
+    <div class="chips">
+      <span class="chip">Պայմանագրեր</span><span class="chip">Ամուսնական դաշինքներ</span><span class="chip">Ռազմական համագործակցություն</span><span class="chip">Հարկային պարտավորություններ</span><span class="chip">Քաղաքական ճանաչման որոնում</span>
+    </div>
+    <div class="compare">
+      <div class="box good"><h4>Հաջողություն</h4><p>Բագրատունիների և Կիլիկիայի օրինակները ցույց են տալիս դիվանագիտության արդյունավետությունը</p></div>
+      <div class="box bad"><h4>Ռիսկ</h4><p>Դաշնակցից կախվածությունը կարող էր վերածվել քաղաքական ենթակայության</p></div>
+    </div>
+    <p class="note">Անհրաժեշտ, բայց ոչ միշտ բավարար միջոց։</p>
+  </template>
+  <template id="s3">
+    <p class="eyebrow">Ռազմավարություն 03</p>
+    <h3>Սփյուռքի ձևավորումը</h3>
+    <p>Պատերազմներն ու հարկային ճնշումները հանգեցրին տեղաշարժերի։ Տեղաշարժը հաճախ հարկադրված էր և ուղեկցվում էր կորուստներով։</p>
+    <h4>Հայերը հաստատվեցին՝</h4>
+    <div class="chips">
+      <span class="chip">Կիլիկիայում</span><span class="chip">Ղրիմում</span><span class="chip">Կոստանդնուպոլսում</span><span class="chip">Իրանում</span><span class="chip">Հնդկաստանում</span>
+    </div>
+    <h4>Նոր համայնքները</h4>
+    <ul>
+      <li>Պահպանեցին եկեղեցին և կրթությունը</li>
+      <li>Զբաղվեցին միջազգային առևտրով</li>
+      <li>Ստեղծեցին տպագրական կենտրոններ, հովանավորեցին կրթությունը</li>
+    </ul>
+    <p class="note">Սփյուռքը չկարողացավ ամբողջությամբ փոխարինել անկախ պետականությանը։</p>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
